@@ -20,10 +20,12 @@ const rl2 = reading.createInterface({ // Cria uma interface de leitura
     out:process.stdout // Define a saída padrão
 });
 rl2.question('Digite seu nome: ', (nome) => { // Pergunta ao usuário pelo nome
-    rl2.question('Digite sua idade: ', (idade) => { // Pergunta ao usuário pela idade
-        console.log(`Ola, ${nome}! Voce tem ${idade} anos.`); // Exibe a saudação com o nome e idade fornecidos
-        rl2.close(); // Fecha a interface após a entrada
-    })
+    rl2.question('Digite seu e-mail: ', (email) => { // Pergunta ao usuário pelo e-mail
+        rl2.question("Digite sua idade: ", (idade) => { // Pergunta ao usuário pela idade
+          console.log(`Ola, ${nome}! Seu e-mail e ${email} e voce tem ${idade} anos.`); // Exibe a saudação com o nome e idade fornecidos
+          rl2.close(); // Fecha a interface após a entrada
+        });
+    });    
 });
 
 // Usando process.stdin diretamente: Útil para scripts simples e rápidos.
