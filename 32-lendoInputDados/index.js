@@ -13,8 +13,11 @@ rl.question('Digite seu nome: ', (nome) => { // Pergunta ao usuário pelo nome
     rl.close(); // Fecha a interface após a entrada
 });
 
+
+/*********************************************************************************/
+
 // Lendo múltiplos inputs com readline: 
-const readline = require('readline'); // Importa o módulo readline
+//const readline = require('readline'); // Importa o módulo readline
 const rl2 = readline.createInterface({ // Cria uma interface de leitura
     input: process.stdin, // Define a entrada padrão
     out:process.stdout // Define a saída padrão
