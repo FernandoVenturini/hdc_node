@@ -1,6 +1,7 @@
-{ 
-  "type": "module",
+{
+  "type": "commonjs",
   "dependencies": {
-    "inquire": "^0.4.8"
+    "inquire": "^0.4.8",
+    "inquirer": "^13.3.2"
   }
 }
